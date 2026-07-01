@@ -18,7 +18,8 @@ fi
   --api-key       "$AMO_JWT_ISSUER" \
   --api-secret    "$AMO_JWT_SECRET" \
   --channel       listed \
+  --amo-metadata  amo-metadata.json \
   --ignore-files  "web-ext-config.mjs" "sign.sh" "README.md" "CHANGELOG.md" \
-                  ".gitignore" "icons/icon-dark.svg" "icons/icon-light.svg" \
-                  "icons/icon-48.svg" "icons/icon-96.svg" \
+                  ".gitignore" "amo-metadata.json" "icons/icon-dark.svg" \
+                  "icons/icon-light.svg" "icons/icon-48.svg" "icons/icon-96.svg" \
                   "tab-cap-*.zip" "*.xpi"
