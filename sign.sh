@@ -13,7 +13,12 @@ if [[ -z "${AMO_JWT_ISSUER:-}" || -z "${AMO_JWT_SECRET:-}" ]]; then
 fi
 
 ~/.local/bin/web-ext sign \
-  --api-key    "$AMO_JWT_ISSUER" \
-  --api-secret "$AMO_JWT_SECRET" \
-  --channel    listed \
-  --config     web-ext-config.mjs
+  --source-dir    . \
+  --artifacts-dir . \
+  --api-key       "$AMO_JWT_ISSUER" \
+  --api-secret    "$AMO_JWT_SECRET" \
+  --channel       listed \
+  --ignore-files  "web-ext-config.mjs" "sign.sh" "README.md" "CHANGELOG.md" \
+                  ".gitignore" "icons/icon-dark.svg" "icons/icon-light.svg" \
+                  "icons/icon-48.svg" "icons/icon-96.svg" \
+                  "tab-cap-*.zip" "*.xpi"
