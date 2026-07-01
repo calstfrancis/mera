@@ -1,5 +1,9 @@
 # Changelog
 
+## [1.0.2] — AMO compliance fix
+
+- Set `data_collection_permissions.required` to `["none"]` (empty array not accepted by validator)
+
 ## [1.0.1] — AMO compliance
 
 - Add `data_collection_permissions` to manifest as required by Firefox Add-ons
