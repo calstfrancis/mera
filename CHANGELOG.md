@@ -1,5 +1,9 @@
 # Changelog
 
+## [1.0.1] — AMO compliance
+
+- Add `data_collection_permissions` to manifest as required by Firefox Add-ons
+
 ## [1.0.0] — Initial release
 
 First public release.
