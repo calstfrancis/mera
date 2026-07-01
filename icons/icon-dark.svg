@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+  <!-- Tab bar (dark icon = for light toolbar = dark elements) -->
+  <rect x="0" y="5" width="16" height="11" rx="2" fill="#3d3d5c"/>
+  <rect x="0" y="2" width="7" height="5" rx="1.5 1.5 0 0" fill="#3d3d5c"/>
+  <rect x="8" y="3" width="5" height="4" rx="1 1 0 0" fill="#7a7a9a"/>
+  <!-- Cap line -->
+  <rect x="0" y="9" width="16" height="2" fill="#c50042"/>
+</svg>
