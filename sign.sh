@@ -16,4 +16,4 @@ fi
   --api-key    "$AMO_JWT_ISSUER" \
   --api-secret "$AMO_JWT_SECRET" \
   --channel    listed \
-  --config     web-ext-config.cjs
+  --config     web-ext-config.mjs

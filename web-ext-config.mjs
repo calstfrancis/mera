@@ -3,7 +3,7 @@ export default {
     sourceDir: ".",
     artifactsDir: ".",
     ignoreFiles: [
-      "web-ext-config.cjs",
+      "web-ext-config.mjs",
       "sign.sh",
       "README.md",
       "CHANGELOG.md",
