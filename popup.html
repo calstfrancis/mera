@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tab Cap</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div id="shake-target">
+    <header>
+      <img src="icons/icon-48.png" alt="" width="28" height="28">
+      <h1>Tab Cap</h1>
+      <span id="shortcut-hint">Alt+Shift+T</span>
+    </header>
+
+    <main>
+      <div class="status-row">
+        <span id="open-count">—</span>
+        <span class="sep">/</span>
+        <span id="limit-display">—</span>
+        <span class="label">tabs open</span>
+      </div>
+
+      <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100">
+        <div id="progress-fill"></div>
+      </div>
+
+      <p id="blocked-row" hidden>
+        <span id="blocked-count"></span> blocked today
+      </p>
+
+      <section class="settings">
+        <span class="section-label">Tab limit</span>
+        <div class="stepper">
+          <button id="dec-btn" aria-label="Decrease limit">−</button>
+          <input id="limit-input" type="number" min="1" max="200" step="1" aria-label="Tab limit">
+          <button id="inc-btn" aria-label="Increase limit">+</button>
+        </div>
+
+        <div class="toggle-row">
+          <span class="toggle-label">Enforce per window</span>
+          <label class="toggle" aria-label="Enforce per window">
+            <input type="checkbox" id="per-window-toggle">
+            <span class="toggle-track"><span class="toggle-thumb"></span></span>
+          </label>
+        </div>
+
+        <p id="toggle-desc">Limit applies to all windows combined.</p>
+      </section>
+
+      <p id="status" aria-live="polite"></p>
+    </main>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
