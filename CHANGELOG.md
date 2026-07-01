@@ -1,5 +1,9 @@
 # Changelog
 
+## [1.0.3] — Raise minimum Firefox version
+
+- Bump `strict_min_version` to 142 — required to support `data_collection_permissions` on both desktop (140+) and Android (142+)
+
 ## [1.0.2] — AMO compliance fix
 
 - Set `data_collection_permissions.required` to `["none"]` (empty array not accepted by validator)
